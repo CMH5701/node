@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api 테스트</title>
+<style>
+    #framework{
+        color: paleturquoise;
+    }
+</style>
+
+</head>
+<body>
+    <h2 id = "framework"></h2>
+    <input id = "name" type = "text">
+    <button onclick="getWork()">API 요청 </button> 
+<script>
+function getWork() { //input 값 저장해줄 함수 생성
+    const name = document.getElementById('name').value //입력 받은 input name 값 저장
+    fetch(`http://localhost:8080/work/${name}`) //API 경로 지정 {name} 값 받아옴
+    .then((response) => response.json()) //json 타입으로 res
+    .then((data) => {
+        console.log(data.framework)
+        document.getElementById('framework').innerHTML = data.framework //innerhtml 없으면 데이터는 받아오지만 읽지는 못함 
+});
+}
+</script>
+    
+</body>
+</html>

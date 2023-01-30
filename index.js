@@ -20,7 +20,6 @@ app.get('/user/:id', function (req, res) {
     // const p = req.params //파라미터로 request 요청
     // console.log(p.id) //파라미터 값 입력
     // res.json({'id':p.id})//id : 원하는 입력된 파라미터 값 출력 
-    
     const q = req.query
     console.log(q.id)
     console.log(q.name)
@@ -31,7 +30,7 @@ app.get('/user/:id', function (req, res) {
     res.json({'이름뭐야?': q.name}) //주소창에 입력한 값 출력 id = *** name = mh = {"이름뭐야?" : "cmh"} 출력
 
 })
-app.get('/work/:name' , (req,res) => { 
+app.get('/work/:name' , (req,res) => { //req = cmh : res value= node.js 
     const {name} = req.params
     
     if(name == "cmh"){
