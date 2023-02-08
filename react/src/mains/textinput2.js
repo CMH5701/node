@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-const Textinput2 = () => {
+const Textinput2 = () => { //회원가입 폼에 사용 가능 할듯함.
     const [inputs, setInputs] = useState({
     text: "",
     email: "",
@@ -21,7 +21,8 @@ const Textinput2 = () => {
     }
 
     return(
-        <div>
+
+<div>
             <div>
             <label>이름</label>
             <input type = "text" id = "text" value = {text} onChange = {onChange} > 

@@ -5,7 +5,7 @@ function Main() {
 }
 
 
-export default Main;  //함수형 컴포넌트
+export default Main;  //함수형 컴포넌트 요즘 많이 씀
 
 // import React ,{Component} from "react";
 
