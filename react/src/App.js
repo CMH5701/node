@@ -7,13 +7,8 @@ import Counter from "./mains/Counter";
 import Textinput from "./mains/textinput";
 import Textinput2 from "./mains/textinput2";
 import Read from "./mains/read";
-
-
-
-
-
 import {Routes, Route , Link} from "react-router-dom";
-import UserList from "./mains/read";
+
 
 function App() {
   return (
@@ -25,7 +20,7 @@ function App() {
       <Link to = "/Counter">카운터</Link>/
       <Link to = "/Textinput">입력 값</Link>/
       <Link to = "/Textinput2">입력 값2</Link>/
-      <Link to = "/readpage">이름 리스트</Link>
+      <Link to = "/read">이름 리스트</Link>
       </div>
      
 
@@ -37,7 +32,7 @@ function App() {
         <Route path = "/Counter" element = {<Counter/>}/>
         <Route path = "/textinput" element = {<Textinput/>}/>
         <Route path = "/textinput2" element = {<Textinput2/>}/>
-        <Route path = "/read" element = {<UserList />}/>
+        <Route path = "/read" element = {<Read />}/>
       </Routes>
 
 </div>

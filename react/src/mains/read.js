@@ -9,11 +9,11 @@ const User = ({userData}) => {
     )
 }
 
-const UserList = () => {
+const Read = () => {
     const users = [ 
         {email: 'cmh@gmail.com' , name: '최명환' },
         {email: 'kcj@gmail.com' , name: '김찬진' },
-        {email: 'haha@gmail.com' , name: '하하' },
+        {email: 'exnpm@gmail.com' , name: '노드와 리엑트' },
     ];
 
 
@@ -37,5 +37,5 @@ return (
     </table>
 )
 }
-export default UserList
+export default Read
 
