@@ -8,6 +8,7 @@ import Textinput from "./mains/textinput";
 import Textinput2 from "./mains/textinput2";
 import Read from "./mains/read";
 import {Routes, Route , Link} from "react-router-dom";
+import mainimg from './logo.svg';
 
 
 function App() {
@@ -15,12 +16,24 @@ function App() {
     <div className="App">
       <nav>
     <div className = "menu">
-      <Link to = "/">메인</Link>/
-      <Link to = "/Menu">메뉴</Link>/
-      <Link to = "/Counter">카운터</Link>/
-      <Link to = "/Textinput">입력 값</Link>/
-      <Link to = "/Textinput2">입력 값2</Link>/
-      <Link to = "/read">이름 리스트</Link>
+      <Link className = "mainnav" to = "/">
+      <img className = "mainnavimg" src={mainimg} alt="navtest"/>
+      </Link>/
+      <Link to = "/Menu">메뉴
+      <img className = "mainnavimg" src={mainimg} alt="navtest"/>
+      </Link>/
+      <Link to = "/Counter">카운터
+      <img className = "mainnavimg" src={mainimg} alt="navtest"/>
+      </Link>/
+      <Link to = "/Textinput">입력 값
+      <img className = "mainnavimg" src={mainimg} alt="navtest"/>
+      </Link>/
+      <Link to = "/Textinput2">입력 값2
+      <img className = "mainnavimg" src={mainimg} alt="navtest"/>
+      </Link>/
+      <Link to = "/read">이름 리스트
+      <img className = "mainnavimg" src={mainimg} alt="navtest"/>
+      </Link>
       </div>
      
 

@@ -16,4 +16,14 @@ code {
 .menu{
   margin-left: 20px;
   text-align: center;
+  background-color: greenyellow;
+  
 }
+
+.mainnavimg{
+  width: 1rem;
+}
+a{
+  text-Decoration: "none";
+}
+
